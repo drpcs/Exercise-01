@@ -1,0 +1,29 @@
+{
+  "name": "exercise-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "transpile": "babel ./src --out-dir dist-src"
+  },
+  "author": "",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },  
+  "jest": {
+    "testPathIgnorePatterns": ["dist-src"]
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "jest": "^29.3.1",
+    "rimraf": "^3.0.2"
+  }
+}
